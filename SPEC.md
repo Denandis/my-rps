@@ -51,7 +51,8 @@ Use `unit`, `integration`, and `e2e` pytest markers. Run `.venv/bin/python check
 ### Work record
 
 - Issue: https://github.com/Denandis/my-rps/issues/1
-- Pull request / CI: add actual URLs when they exist.
+- Pull request: https://github.com/Denandis/my-rps/pull/2
+- CI run: https://github.com/Denandis/my-rps/pull/2/checks
 - Implementation: `determine_winner` is built in `game.py` using a move-beats-move mapping; the supplied server and interface are unchanged.
 - Checks: `.venv/bin/python check.py` passes locally: Black, Pylint, pytest non-browser (nine unit cases, one integration round, and the reused missing/invalid-input checks), and the real Chromium browser round and replay.
 - Played round: I chose Paper, the computer chose Rock, and the page showed "You win!" This is correct because paper covers rock. Each click started a fresh independent round, and Tab plus Enter played a round from the keyboard.
